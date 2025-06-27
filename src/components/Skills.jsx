@@ -25,6 +25,8 @@ const Skills = () => {
   ];
 
   return (
+<>
+
     <section id="skills" className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
@@ -95,6 +97,33 @@ const Skills = () => {
         </div>
       </div>
     </section>
+    
+    <section id="skills" className="py-24 bg-white">
+      <div className="container mx-auto px-0">
+        <div>
+          {/* Header */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center bg-purple-50 px-4 py-2 rounded-full text-odoo-purple font-medium text-sm mb-6 ">
+              <span className="w-2 h-2 bg-odoo-purple rounded-full mr-2"></span>
+              From Where It Began
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold font-inter text-odoo-dark mb-8 font-heading">
+              From Where It Began
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto font-inter">
+              Constantly learning and adapting to new technologies to deliver cutting-edge solutions 
+              that help businesses thrive in the digital landscape.
+            </p>
+          </div>
+
+          {/* Skills Grid */}
+          <div className="">
+            <img src="portfolio-bg.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    </>
   );
 };
 

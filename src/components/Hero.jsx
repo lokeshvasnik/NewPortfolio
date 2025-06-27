@@ -18,9 +18,13 @@ const Hero = () => {
             Available for freelance work
           </div>
 
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold font-inter mb-8 leading-tight font-heading">
-            <span></span>
-            <span className="text-odoo-dark">Lokesh Vasnik</span>
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold font-inter mb-8 leading-tight font-heading relative">
+            <span className="text-odoo-dark relative z-10">Lokesh Vasnik</span>
+            <img
+              className="heading-yellow absolute end-36 top-4 w-96 z-0 sm:hidden md:block"
+              src="https://odoocdn.com/openerp_website/static/src/img/highlights/yellow_highlight_bold_05.svg"
+              alt=""
+            />
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed font-inter">

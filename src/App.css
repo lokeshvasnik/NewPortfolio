@@ -46,8 +46,4 @@
 
 .heading-yellow {
     background-image: url('https://odoocdn.com/openerp_website/static/src/img/highlights/yellow_highlight_bold_05.svg');
-    background-position: center 60%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    white-space: nowrap;
 }
