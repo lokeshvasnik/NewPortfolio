@@ -41,9 +41,11 @@ const Header = () => {
           </ul>
 
           <div className="hidden md:flex items-center space-x-4">
-            <button className="px-6 py-2 text-odoo-purple border border-odoo-purple rounded-lg hover:bg-odoo-purple hover:text-white transition-all duration-200 font-medium text-sm">
-              Download CV
-            </button>
+            <a href="/LokeshVasnikResumeNew.pdf" download>
+              <button className="px-6 py-2 text-odoo-purple border border-odoo-purple rounded-lg hover:bg-odoo-purple hover:text-white transition-all duration-200 font-medium text-sm">
+                Download CV
+              </button>
+            </a>
           </div>
 
           <button
@@ -70,9 +72,11 @@ const Header = () => {
               ))}
             </ul>
             <div className="flex flex-col space-y-3 mt-6">
-              <button className="px-6 py-2 text-odoo-purple border border-odoo-purple rounded-lg hover:bg-odoo-purple hover:text-white transition-all duration-200 font-medium text-sm">
-                Download CV
-              </button>
+             <a href="/LokeshVasnikResumeNew.pdf" download>
+                <button className="px-6 py-2 text-odoo-purple border border-odoo-purple rounded-lg hover:bg-odoo-purple hover:text-white transition-all duration-200 font-medium text-sm">
+                  Download CV
+                </button>
+             </a>
             </div>
           </div>
         )}

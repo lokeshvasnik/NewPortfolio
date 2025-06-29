@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,17 +22,27 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 3000);
+      e.preventDefault();
+
+      emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formData,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      ).then(() => {
+          toast.success('Form submitted successfully!')
+          setIsSubmitted(true);
+          setFormData({ name: '', email: '', subject: '', message: '' });
+
+          setTimeout(() => setIsSubmitted(false), 3000);
+      }).catch((error) => {
+        console.error('EmailJS error:', error);
+        toast.error('EmailJS error!')
+      });
   };
 
   return (
-    <section id="contact" className="py-24 bg-gray-50">
+    <section id="contact" className="pt-20 pb-14 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           {/* Header */}

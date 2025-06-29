@@ -33,9 +33,11 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <button className="bg-odoo-purple hover:bg-opacity-90 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg font-inter">
-              Download CV
-            </button>
+            <a href="/LokeshVasnikResumeNew.pdf" download>
+              <button className="bg-odoo-purple hover:bg-opacity-90 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg font-inter">
+                Download CV
+              </button>
+            </a>
             <a href="#projects" className="border border-gray-300 hover:border-odoo-purple text-odoo-dark hover:text-odoo-purple px-8 py-4 rounded-lg font-semibold transition-all duration-200 font-inter">
               View My Work
             </a>

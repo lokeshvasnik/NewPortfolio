@@ -90,15 +90,15 @@ const Skills = () => {
 
           {/* Bottom CTA */}
           <div className="text-center mt-16">
-            <button className="bg-odoo-purple hover:bg-opacity-90 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg font-inter">
+            <a href='#projects' className="bg-odoo-purple hover:bg-opacity-90 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg font-inter">
               See My Work in Action
-            </button>
+            </a>
           </div>
         </div>
       </div>
     </section>
     
-    <section id="skills" className="py-24 bg-white">
+    <section id="skills" className="pt-24 bg-white">
       <div className="container mx-auto px-0">
         <div>
           {/* Header */}

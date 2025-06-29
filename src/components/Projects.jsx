@@ -4,24 +4,27 @@ import { ExternalLink, Github, Filter } from 'lucide-react';
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const filters = ['All', 'Web Apps', 'E-commerce', 'Portfolio'];
+  // const filters = ['All', 'Web Apps', 'E-commerce', 'Portfolio'];
+  const filters = ['All', 'Web Apps']
+
 
   const projects = [
     {
       id: 1,
-      title: "E-commerce Platform",
+      title: "Weather With Map",
       description: "A modern e-commerce solution with advanced features including inventory management, payment processing, and analytics dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
-      category: "E-commerce",
+      image: "https://github.com/lokeshvasnik/ImageUrl/blob/main/frame_chrome_mac_dark.png?raw=true",
+      // category: "E-commerce",
+      category: "Web Apps",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "Gym Fitness Website",
       description: "Collaborative project management tool with real-time updates, team collaboration features, and advanced reporting.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=800&q=80",
+      image: "https://github.com/lokeshvasnik/ImageUrl/blob/main/07.png?raw=true",
       category: "Web Apps",
       technologies: ["React", "TypeScript", "Firebase", "Tailwind"],
       liveUrl: "#",
@@ -29,44 +32,48 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Designer Portfolio",
+      title: "Random Quotes",
       description: "Clean and minimalist portfolio website showcasing creative work with smooth animations and responsive design.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80",
-      category: "Portfolio",
+      image: "https://github.com/lokeshvasnik/ImageUrl/blob/main/04.png?raw=true",
+      // category: "Portfolio",
+      category: "Web Apps",
       technologies: ["Next.js", "Framer Motion", "CSS", "Vercel"],
-      liveUrl: "#",
+      liveUrl: "https://advisor-wheat.vercel.app/",
       githubUrl: "#"
     },
     {
       id: 4,
-      title: "Restaurant Booking",
-      description: "Online reservation system for restaurants with table management, customer notifications, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
+      title: "Modern Notes",
+      description: "Clean and minimalist portfolio website showcasing creative work with smooth animations and responsive design.",
+      image: "https://github.com/lokeshvasnik/ImageUrl/blob/main/modern-notes.png?raw=true",
+      // category: "Portfolio",
       category: "Web Apps",
-      technologies: ["Vue.js", "Express", "PostgreSQL", "Socket.io"],
-      liveUrl: "#",
+      technologies: ["Next.js", "Framer Motion", "CSS", "Vercel"],
+      liveUrl: "https://modern-notes.vercel.app/",
       githubUrl: "#"
     },
-    {
-      id: 5,
-      title: "Fashion Store",
-      description: "Luxury fashion e-commerce platform with advanced filtering, wishlist functionality, and seamless checkout experience.",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80",
-      category: "E-commerce",
-      technologies: ["React", "Redux", "Node.js", "PayPal"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      id: 6,
-      title: "Creative Agency",
-      description: "Modern agency website with interactive elements, case studies showcase, and integrated contact forms.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-      category: "Portfolio",
-      technologies: ["Gatsby", "GraphQL", "Contentful", "Netlify"],
-      liveUrl: "#",
-      githubUrl: "#"
-    }
+    // {
+    //   id: 5,
+    //   title: "Work Connect",
+    //   description: "Clean and minimalist portfolio website showcasing creative work with smooth animations and responsive design.",
+    //   image: "a://github.com/lokeshvasnik/ImageUrl/blob/main/modern-notes.png?raw=true",
+    //   // category: "Portfolio",
+    //   category: "Web Apps",
+    //   technologies: ["Next.js", "Framer Motion", "CSS", "Vercel"],
+    //   liveUrl: "https://workconnectmern.vercel.app",
+    //   githubUrl: "#"
+    // },
+    // {
+    //   id: 5,
+    //   title: "Personal Portfolio",
+    //   description: "Clean and minimalist portfolio website showcasing creative work with smooth animations and responsive design.",
+    //   image: "a://github.com/lokeshvasnik/ImageUrl/blob/main/modern-notes.png?raw=true",
+    //   category: "Portfolio",
+    //   // category: "Web Apps",
+    //   technologies: ["Next.js", "Framer Motion", "CSS", "Vercel"],
+    //   liveUrl: "https://personal-portfolio-website-theta-nine.vercel.app",
+    //   githubUrl: "#"
+    // },
   ];
 
   const filteredProjects = activeFilter === 'All' 
@@ -176,9 +183,9 @@ const Projects = () => {
           {/* Bottom CTA */}
           <div className="text-center">
             <p className="text-gray-600 mb-6 font-inter">Interested in working together?</p>
-            <button className="bg-odoo-purple hover:bg-opacity-90 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg font-inter">
+            <a href='#contact'  className="bg-odoo-purple hover:bg-opacity-90 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg font-inter">
               Let's Build Something Amazing
-            </button>
+            </a>
           </div>
         </div>
       </div>
